@@ -2,23 +2,38 @@ public class ArraySorting {
 
     public static void main(String[] args) {
 
-        //BEHAVIOUR PARAMETERIZATION
+        //-----------------BEHAVIOUR PARAMETERIZATION
         ArraySorting as = new ArraySorting();
 
-        QuickSort qs = new QuickSort(); //this is a behaviour now
-        BubbleSort bs = new BubbleSort();
+
+        QuickSort qs = new QuickSort(); //new object of QuickSort
+        BubbleSort bs = new BubbleSort(); //new object of BubbleSort
         as.sort(qs);
         as.sort(bs);
 
-        //Initializing the Lambda
+        //-----------------B.P. ENDS HERE
+
+        /*
+
+        WHY DON'T WE JUST WRITE qs.sort(); INSTEAD?
+        Because if we do it that way, we have to adjust it in the main method everytime
+        the requirement changes.
+
+        */
 
 
+        // -------------LAMBDA STARTS HERE
+        /*
+        Lambda is a different way of writing the B.P. With BP. we need to write an interface,but also
+        classes for each scenario. However, you just need a functional interface (meaning an interface
+        with only one methods).
 
+         */
         //Here below, quickSort and bubbleSort are actions. Above, we have to make new QuickSort(), but here we didnt
-        Sorting quickSort = () -> System.out.println("Quick Sorting");
+        Sorting quickSort = () -> System.out.println("Quick Sorting-2");
         as.sort(quickSort);
 
-        Sorting bubbleSort = () -> System.out.println("Bubble sorting");
+        Sorting bubbleSort = () -> System.out.println("Bubble sorting-2");
         as.sort(bubbleSort);
     }
 

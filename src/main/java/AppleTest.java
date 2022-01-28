@@ -18,6 +18,7 @@ public class AppleTest {
 
         System.out.println("------------------------");
 
+
         List<Apple> greenApple = filterApples(inventory,new AppleGreenColorPredicate());
         System.out.println(greenApple);
     }
@@ -26,7 +27,7 @@ public class AppleTest {
         List<Apple> result = new ArrayList<>();
 
         for(Apple apple : inventory){
-            if(applePredicate.test(apple)){
+            if(applePredicate.test(apple)){ //calling the method in interface
                 result.add(apple);
             }
         }

@@ -1,5 +1,9 @@
 //PART BEHAVIOUR PARAMETERIZATION
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 /*
 QUESTION:
 Imagine an application to help a farmer understand his inventory.
@@ -7,7 +11,9 @@ Imagine an application to help a farmer understand his inventory.
 - Find all apples heavier than 200
 As a developer, we have to minimize our engineering effort.
  */
-
+@Getter
+@Setter
+@ToString
 public class Apple {
     private int weight;
     private Color color; //building ENUM here

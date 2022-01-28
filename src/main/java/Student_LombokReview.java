@@ -3,8 +3,6 @@
 //this is boilerplate: meaning the code that is used a lot but still doesn't change or small change
 import lombok.*;
 
-import java.util.Objects;
-
 //this replaces all the code down in the comments
 //Static fields are not initialized in the constructors tho
 //Final fields are not initialized in the constructor too, but to have it
@@ -17,7 +15,7 @@ import java.util.Objects;
 @ToString
 @EqualsAndHashCode
 @Data
-public class Student {
+public class Student_LombokReview {
 
     private String firstName;
     private String lastName;
