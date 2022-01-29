@@ -1,3 +1,5 @@
+//All Ready2Use Func Interfaces: https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html
+
 package functionalInterfaces;
 
 import java.util.function.*;
