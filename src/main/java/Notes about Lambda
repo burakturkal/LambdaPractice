@@ -1,12 +1,21 @@
  ------------- BEHAVIOR PARAMETIZATION AND LAMBDA --------------------
 
-BP is used to make requirement changes easier. -- WILL ADD MORE HERE IN THE FUTURE
+BP is used to make requirement changes easier. Instead of writing multiple methods, you write one method that can
+accept all requirement types. It takes the requirement and goes to that class, and loop every element and gives
+the returns the output.
+
+1) Create interface
+2) Create Classes implementing  (You need to overwrite)
+3) Create the object from the implementing class and pass in the common method
+
+-> We use polymorphism to make this work.
 
 Lambda is a different way of writing the B.P. With BP. we need to write an interface,but also
 classes for each scenario. However, you just need a functional interface (meaning an interface
-with only one methods).
+with only one methods). Lambda is a value. What is its type? That interface. That's why we need
+an interface.
 
-
+Whatever the return of that interface is the return of lambda.
 
 
 
@@ -51,14 +60,17 @@ public void sort(Systemout.printlin("Quicksorting");) {
         return apple.getWeight()>200;
         }
 
+
+
         Turning above into Lambda
 
-        weightApple= (Apple apple) -> apple.getWeight()>200;
-
-        ---
+        weightApple = (Apple apple) -> apple.getWeight()>200;
+        --- applename = (Apple apple) -> apple.getName()
 
         Another example: return length:  lengthCount = (String s) -> s.length;
         Another example:
+
+
 
         myFunction = (int x,int y) -> {
         System.out.println("Result");

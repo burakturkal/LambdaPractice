@@ -21,9 +21,14 @@ public class AppleTest {
 
         List<Apple> greenApple = filterApples(inventory,new AppleGreenColorPredicate());
         System.out.println(greenApple);
+
+
+
     }
 
-    private static List<Apple> filterApples(List<Apple> inventory,ApplePredicate applePredicate ){
+    private static List<Apple> filterApples(List<Apple> inventory, ApplePredicate applePredicate){
+        //for parameters ( Test Data, Interface )
+        //We use interface to be able to call every child class (requirements)
         List<Apple> result = new ArrayList<>();
 
         for(Apple apple : inventory){

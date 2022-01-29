@@ -1,0 +1,13 @@
+@Builder in Lombok makes it easier to make instances.
+ - When you use the builder, you don't have to use AllArgConstructor, because it already builds it unless there is
+   another @XConstructor. If you have one of them, then Builder won't build it. That's why we don't use it very
+   often in development, because we always need a no arg constructor.
+
+   inventory.add(new Orange(300,Color.GREEN)); --> Instead of this
+   inventory.add(Orange.builder().weight(200).color(Color.GREEN).build()); --> We can use this
+
+@Data is the shortcut of @Getter, setter, toString
+
+-----
+
+Collections always accepts objects. Even when you pass integer, you pass Wrapper class
