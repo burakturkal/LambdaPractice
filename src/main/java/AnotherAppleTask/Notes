@@ -3,8 +3,8 @@
    another @XConstructor. If you have one of them, then Builder won't build it. That's why we don't use it very
    often in development, because we always need a no arg constructor.
 
-   inventory.add(new Orange(300,Color.GREEN)); --> Instead of this
-   inventory.add(Orange.builder().weight(200).color(Color.GREEN).build()); --> We can use this
+   inventory.add(new Orange(300,AppleTask.Color.GREEN)); --> Instead of this
+   inventory.add(Orange.builder().weight(200).color(AppleTask.Color.GREEN).build()); --> We can use this
 
 @Data is the shortcut of @Getter, setter, toString
 

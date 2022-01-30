@@ -56,7 +56,7 @@ public void sort(Systemout.printlin("Quicksorting");) {
 
         For this:
 
-        weightApple = public boolean test (Apple apple){
+        weightApple = public boolean test (AppleTask.Apple apple){
         return apple.getWeight()>200;
         }
 
@@ -64,8 +64,8 @@ public void sort(Systemout.printlin("Quicksorting");) {
 
         Turning above into Lambda
 
-        weightApple = (Apple apple) -> apple.getWeight()>200;
-        --- applename = (Apple apple) -> apple.getName()
+        weightApple = (AppleTask.Apple apple) -> apple.getWeight()>200;
+        --- applename = (AppleTask.Apple apple) -> apple.getName()
 
         Another example: return length:  lengthCount = (String s) -> s.length;
         Another example:
@@ -90,7 +90,7 @@ Step 2: Create a method with the exact same signature of Lambda expression
 interface MyLambdaType{
     void print();
 }
-MyLambdaType myLambda = () -> System.out.print("Sorting the array");
+MyLambdaType myLambda = () -> System.out.print("SortingTask.Sorting the array");
 
 
 ---
@@ -103,7 +103,7 @@ To make sure no more than one method is added by other people, you can add
 @FunctionalInterface. It gives an error if you have more than one method. Example:
 
 @FunctionInterface
-public interface Sorting{
+public interface SortingTask.Sorting{
     public void sort();
    }
 

@@ -1,4 +1,4 @@
-package Another_Apple_Task;
+package AnotherAppleTask;
 
 public enum Color {
     GREEN, RED;

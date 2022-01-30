@@ -1,3 +1,5 @@
+package SortingTask;
+
 public interface Sorting {
     public void sort();
 }

@@ -1,4 +1,4 @@
-//PART BEHAVIOUR PARAMETERIZATION
+package AppleTask;//PART BEHAVIOUR PARAMETERIZATION
 
 import lombok.Getter;
 import lombok.Setter;
@@ -41,7 +41,7 @@ public class Apple {
 
     @Override
     public String toString() {
-        return "Apple{" +
+        return "AppleTask.Apple{" +
                 "weight=" + weight +
                 ", color=" + color +
                 '}';

@@ -1,3 +1,5 @@
+package SortingTask;
+
 public class ArraySorting {
 
     public static void main(String[] args) {
@@ -6,8 +8,8 @@ public class ArraySorting {
         ArraySorting as = new ArraySorting();
 
 
-        QuickSort qs = new QuickSort(); //new object of QuickSort
-        BubbleSort bs = new BubbleSort(); //new object of BubbleSort
+        QuickSort qs = new QuickSort(); //new object of SortingTask.QuickSort
+        BubbleSort bs = new BubbleSort(); //new object of SortingTask.BubbleSort
         as.sort(qs);
         as.sort(bs);
 
@@ -29,8 +31,8 @@ public class ArraySorting {
         with only one methods).
 
          */
-        //Here below, quickSort and bubbleSort are actions. Above, we have to make new QuickSort(), but here we didnt
-        Sorting quickSort = () -> System.out.println("Quick Sorting-2");
+        //Here below, quickSort and bubbleSort are actions. Above, we have to make new SortingTask.QuickSort(), but here we didnt
+        Sorting quickSort = () -> System.out.println("Quick SortingTask.Sorting-2");
         as.sort(quickSort);
 
         Sorting bubbleSort = () -> System.out.println("Bubble sorting-2");
@@ -38,7 +40,7 @@ public class ArraySorting {
     }
 
   /*  private void quick_sort() {
-        System.out.println("Quick Sorting Array");
+        System.out.println("Quick SortingTask.Sorting Array");
 
         There are different ways to sort an array. This one will do only quick sorting.
         So either you'll write all the sorting methods in this or the ideal way to do

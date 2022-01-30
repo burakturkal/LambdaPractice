@@ -1,4 +1,4 @@
-package Another_Apple_Task;
+package AnotherAppleTask;
 
 import java.util.ArrayList;
 import java.util.List;
