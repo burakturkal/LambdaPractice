@@ -1,4 +1,4 @@
-package AnotherAppleTask;
+package OrangeTask_AfterAppleTask;
 
 public interface OrangeFormatter {
     String accept(Orange orange);
