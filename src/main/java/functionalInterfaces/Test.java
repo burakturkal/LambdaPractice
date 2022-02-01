@@ -27,16 +27,16 @@ public class Test {
 
 
         //Print all users whose last name starts with E
-        printName (users, user -> user.getLastName().startsWith("E"));
+        printName (users, user123 -> user123.getLastName().startsWith("E"));
 
 
     }
 
     //accept method
     public static void printName(List<User> users, Predicate<User> p){
-        for(User user : users){
-            if(p.test(user)){
-                System.out.println(user.toString());
+        for(User user12 : users){
+            if(p.test(user12)){
+                System.out.println(user12.toString());
             }
         }
     }

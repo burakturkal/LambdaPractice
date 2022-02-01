@@ -14,7 +14,7 @@ public class AppleTest {
         inventory.add(new Apple(200, Color.GREEN));
         inventory.add(new Apple(50, Color.RED));
 
-        /* for BEHAVIOR PARAM.
+        /* 555 - for BEHAVIOR PARAM.
 
         List<AppleTask.Apple> heavyApple = filterApples(inventory, new AppleTask.AppleHeavyPredicate()); //Behaviour is here
         System.out.println(heavyApple); //this is to test HEAVY Behaviour -- will return anything more than 200
@@ -34,7 +34,7 @@ public class AppleTest {
 
     }
 
-    /*  for BEHAVIOR PARAM.
+    /* 555 - for BEHAVIOR PARAM.
     private static List<AppleTask.Apple> filterApples(List<AppleTask.Apple> inventory, AppleTask.ApplePredicate applePredicate){
         //for parameters ( Test Data, Interface )
         //We use interface to be able to call every child class (requirements)

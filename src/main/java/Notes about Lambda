@@ -17,6 +17,9 @@ an interface.
 
 Whatever the return of that interface is the return of lambda.
 
+In lambda expression, you can also call a method in the action place. For example
+Calculate s1 = (x,y) -> METHOD NAME HERE
+
 
 
 public void sort(action){

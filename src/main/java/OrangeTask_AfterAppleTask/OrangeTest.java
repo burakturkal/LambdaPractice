@@ -2,6 +2,7 @@ package OrangeTask_AfterAppleTask;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 
 public class OrangeTest {
     public static void main(String[] args) {
@@ -33,6 +34,7 @@ public class OrangeTest {
 
         prettyPrintApple(inventory, fancyFormatter);
 
+        weightyPrintApple(inventory, orange24 -> "Weight: An orange of " + orange24.getWeight() + "g" );
     }
 
 
@@ -40,6 +42,13 @@ public class OrangeTest {
     private static void prettyPrintApple(List<Orange> inventory, OrangeFormatter orangeFormatter){
         for(Orange orange25 : inventory){
             String output = orangeFormatter.accept(orange25);
+            System.out.println(output);
+        }
+    }
+
+    private static void weightyPrintApple(List<Orange> inventory, Function<Orange, String> trial){
+        for(Orange orange25 : inventory){
+            String output = trial.apply(orange25);
             System.out.println(output);
         }
     }
